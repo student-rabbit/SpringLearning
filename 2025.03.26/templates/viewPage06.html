@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>타임리프연습</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h2> Model 클래스 이용해서 전달된 값 출력 </h2>
+		<p th:text="${data1}"></p>
+		<p th:text="${data2}"></p>
+		<hr>
+		<p th:utext="${data1}"></p>
+		<p th:utext="${data2}"></p>
+		<hr>
+		<p>[[${data1}]]</p>  <!-- th:text와 동일 -->
+		<p>[(${data2})]</p>  <!-- th:utext와 동일 -->
+	</body>
+</html>
