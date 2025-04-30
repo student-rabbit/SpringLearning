@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>입력</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h3>입력화면</h3>
+		<hr>
+		<form method="post" action="member">
+			<p> 아이디: <input type="text" name="id"> </p>
+			<p> 비번: <input type="password" name="passwd"> </p>
+			<p> 거주지: <select name="city">
+						<option>서울시</option>
+						<option>경기도</option>
+					  </select></p>
+			<p> 성별: <input type="radio" name="sex" value="남"> 남 
+					 <input type="radio" name="sex" value="여"> 여
+			</p>
+			<p> 취미: <input type="checkbox" name="hobby" value="독서">독서
+					 <input type="checkbox" name="hobby" value="영화">영화
+			</p>
+			<p><textarea name="greetings" cols="30" rows="3" placeholder="가입인사작성"></textarea></p>
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소하기">
+		</form>
+	</body>
+</html>
