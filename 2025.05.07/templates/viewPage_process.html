@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>테스트</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h3>결과</h3>
+		<h3 th:text="${data1}"></h3>
+		<p>실제 파일이름: <span th:text = "${data2}"></span></p>
+		<p>서버에 저장된 파일이름: <span th:text = "${data3}"></span></p>
+		<p><img th:src="'/images/'+${data3}"></p>
+	</body>
+</html>
