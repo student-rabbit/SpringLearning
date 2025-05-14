@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>결과</title>
+	</head>
+	<body>
+		<form method="post" th:object="${member1}" action="/ch09/exam03">
+			<p>아이디: <input type="text"name="memberId" th:field="*{memberId}">
+				<span th:errors="*{memberId}"></span>
+			</p>
+			<p>비번: <input type="password" name="passwd" th:field="*{passwd}">
+				<span th:errors = "*{passwd}"></span>
+			</p>
+			<p> <input type="submit" value="확인"></p>
+		</form>
+		<!--th:object는 도메인 객체, th:field는 도메인 객체의 멤버변수, th:errors는 유효성 검사에 오류 메시지 찍어주는 공간-->
+	</body>
+</html>
